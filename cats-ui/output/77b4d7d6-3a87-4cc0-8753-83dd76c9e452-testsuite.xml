@@ -1,0 +1,105 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587657903066' stop='1587657911838'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587657903067' status='passed' stop='1587657907128'>
+            <name>Add image to cat</name>
+            <title>Add image to cat</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587657904551' status='passed' stop='1587657904874'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587657904874' status='passed' stop='1587657906199'>
+                    <name>I: catAddUI </name>
+                    <title>I: catAddUI </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1587657904874' status='passed' stop='1587657904992'>
+                            <name>I click {"xpath":"//a[@href='/cats/add']"}</name>
+                            <title>I click {"xpath":"//a[@href='/cats/add']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1587657904992' status='passed' stop='1587657905563'>
+                            <name>I fill field {"xpath":"//div[contains(@class, 'control is-expanded')]/input"}, "Рыэьщыэювшдиюлъшёэпфжърмюсотаозжс"</name>
+                            <title>I fill field {"xpath":"//div[contains(@class, 'control is-expanded')]/input"}, "Рыэьщыэювшдиюлъшёэпфжърмюсотаозжс"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1587657905563' status='passed' stop='1587657906084'>
+                            <name>I click {"xpath":"//input[@name='gender-0']"}</name>
+                            <title>I click {"xpath":"//input[@name='gender-0']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1587657906084' status='passed' stop='1587657906199'>
+                            <name>I click {"xpath":"//button[@class='button is-warning']"}</name>
+                            <title>I click {"xpath":"//button[@class='button is-warning']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1587657906199' status='passed' stop='1587657906899'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "Рыэьщыэювшдиюлъшёэпфжърмюсотаозжс"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "Рыэьщыэювшдиюлъшёэпфжърмюсотаозжс"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587657906899' status='passed' stop='1587657907012'>
+                    <name>I click "//button[contains(@class, "main")]"</name>
+                    <title>I click "//button[contains(@class, "main")]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587657907012' status='passed' stop='1587657907122'>
+                    <name>I click "//a[text()="Рыэьщыэювшдиюлъшёэпфжърмюсотаозжс"]"</name>
+                    <title>I click "//a[text()="Рыэьщыэювшдиюлъшёэпфжърмюсотаозжс"]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587657907122' status='passed' stop='1587657907127'>
+                    <name>I wait for element "//div[contains(@class,"photos_photo")]"</name>
+                    <title>I wait for element "//div[contains(@class,"photos_photo")]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587657907128' status='passed' stop='1587657907130'>
+                    <name>I grab current url </name>
+                    <title>I grab current url </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587657907156' status='undefined'>
+                    <name>I attach file "form input[type='file']", "image1.png"</name>
+                    <title>I attach file "form input[type='file']", "image1.png"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1587657907158' status='failed' stop='1587657911833'>
+            <name>Add cat test</name>
+            <title>Add cat test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read property '$x' of null</message>
+                <stack-trace>TypeError: Cannot read property '$x' of null
+                    at findElements (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/helper/Puppeteer.js:2119:18)
+                    at Puppeteer._locate (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/helper/Puppeteer.js:760:12)
+                    at async Puppeteer.findFields (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/helper/Puppeteer.js:2235:13)
+                    at async Puppeteer.attachFile (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/helper/Puppeteer.js:1221:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

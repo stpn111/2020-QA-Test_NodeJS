@@ -1,0 +1,14 @@
+.table {
+  width: 100%;
+  max-width: 300px;
+}
+
+.item-numerable {
+  padding-right: 8px;
+  width: 30px;
+}
+
+.item-count {
+  white-space: nowrap;
+  width: 1px;
+}

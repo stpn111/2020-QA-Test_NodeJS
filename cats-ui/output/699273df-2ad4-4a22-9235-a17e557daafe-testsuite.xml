@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587670014818' stop='1587670018881'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587670014819' status='passed' stop='1587670017229'>
+            <name>Test dropdown empty | {"ъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъ"}</name>
+            <title>Test dropdown empty | {"ъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъ"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587670016262' status='passed' stop='1587670016538'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670016538' status='passed' stop='1587670017225'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "ъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъ"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "ъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670017225' status='passed' stop='1587670017229'>
+                    <name>I wait for element "//div[@class='dropdown-item' and text()='Нет совпадений']"</name>
+                    <title>I wait for element "//div[@class='dropdown-item' and text()='Нет совпадений']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1587670017250' status='passed' stop='1587670018872'>
+            <name>Test dropdown empty | {"кот"}</name>
+            <title>Test dropdown empty | {"кот"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587670018446' status='passed' stop='1587670018720'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670018720' status='passed' stop='1587670018868'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "кот"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "кот"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670018868' status='passed' stop='1587670018872'>
+                    <name>I wait for element "//div[@class='dropdown-item' and text()='Нет совпадений']"</name>
+                    <title>I wait for element "//div[@class='dropdown-item' and text()='Нет совпадений']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

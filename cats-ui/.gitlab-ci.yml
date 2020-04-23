@@ -1,0 +1,94 @@
+stages:
+  - build
+  - publish
+  - deploy
+
+variables:
+  IMAGE_PROD_NAME: "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME"
+  IMAGE_QA_NAME: "$CI_REGISTRY_IMAGE:qa-$CI_COMMIT_REF_NAME"
+  CONTAINER_PROD_NAME: "cats-ui"
+  CONTAINER_QA_NAME: "cats-ui-qa"
+
+build:static:
+  image: node:10.19
+  stage: build
+  before_script:
+    - npm install --production
+  script:
+    - npm run build
+  artifacts:
+    paths:
+    - build/
+    expire_in: 1 week
+  only:
+    - tags
+    - merge_requests
+
+publish:docker-prod:
+  image: docker:latest
+  stage: publish
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --pull -t $IMAGE_PROD_NAME .
+    - docker push $IMAGE_PROD_NAME
+  dependencies:
+    - build:static
+  only:
+    - tags
+
+publish:docker-qa:
+  image: docker:latest
+  stage: publish
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --pull -t $IMAGE_QA_NAME .
+    - docker push $IMAGE_QA_NAME
+  dependencies:
+    - build:static
+  only: [merge_requests]
+  except:
+    variables:
+      - $CI_MERGE_REQUEST_LABELS =~ /without-ci/
+
+deploy:docker-prod:
+  image: docker:latest
+  stage: deploy
+  services:
+    - docker:dind
+  before_script:
+    - which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+    - ssh $USER@$SERVER "(docker rm -f $CONTAINER_PROD_NAME) || true; docker pull $IMAGE_PROD_NAME; docker run -d --name $CONTAINER_PROD_NAME --net=cats --restart always -p 8080:8080 -v /root/data/public/photos:/static/photos $IMAGE_PROD_NAME"
+  only:
+    - tags
+
+deploy:docker-qa:
+  image: docker:latest
+  stage: deploy
+  services:
+    - docker:dind
+  before_script:
+    - which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+    - ssh $USER@$SERVER "(docker rm -f $CONTAINER_QA_NAME) || true; docker pull $IMAGE_QA_NAME; docker run -d --name $CONTAINER_QA_NAME --net=cats --restart always -p 8081:8080 -v /root/data/public/photos:/static/photos $IMAGE_QA_NAME"
+  only: [merge_requests]
+  except:
+    variables:
+      - $CI_MERGE_REQUEST_LABELS =~ /without-ci/
+  

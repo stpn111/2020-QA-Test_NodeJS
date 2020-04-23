@@ -1,0 +1,177 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587658249216' stop='1587658258152'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587658249217' status='passed' stop='1587658253219'>
+            <name>Add image to cat</name>
+            <title>Add image to cat</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587658250566' status='passed' stop='1587658250868'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658250868' status='passed' stop='1587658251768'>
+                    <name>I: catAddUI </name>
+                    <title>I: catAddUI </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1587658250868' status='passed' stop='1587658250988'>
+                            <name>I click {"xpath":"//a[@href='/cats/add']"}</name>
+                            <title>I click {"xpath":"//a[@href='/cats/add']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1587658250988' status='passed' stop='1587658251544'>
+                            <name>I fill field {"xpath":"//div[contains(@class, 'control is-expanded')]/input"}, "Шрохжнхящхрфщфылцщпшрувомнсппйяаг"</name>
+                            <title>I fill field {"xpath":"//div[contains(@class, 'control is-expanded')]/input"}, "Шрохжнхящхрфщфылцщпшрувомнсппйяаг"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1587658251544' status='passed' stop='1587658251656'>
+                            <name>I click {"xpath":"//input[@name='gender-0']"}</name>
+                            <title>I click {"xpath":"//input[@name='gender-0']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1587658251656' status='passed' stop='1587658251768'>
+                            <name>I click {"xpath":"//button[@class='button is-warning']"}</name>
+                            <title>I click {"xpath":"//button[@class='button is-warning']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1587658251768' status='passed' stop='1587658252421'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "Шрохжнхящхрфщфылцщпшрувомнсппйяаг"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "Шрохжнхящхрфщфылцщпшрувомнсппйяаг"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658252421' status='passed' stop='1587658252534'>
+                    <name>I click "//button[contains(@class, "main")]"</name>
+                    <title>I click "//button[contains(@class, "main")]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658252534' status='passed' stop='1587658253211'>
+                    <name>I click "//a[text()="Шрохжнхящхрфщфылцщпшрувомнсппйяаг"]"</name>
+                    <title>I click "//a[text()="Шрохжнхящхрфщфылцщпшрувомнсппйяаг"]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658253211' status='passed' stop='1587658253218'>
+                    <name>I wait for element "//div[contains(@class,"photos_photo")]"</name>
+                    <title>I wait for element "//div[contains(@class,"photos_photo")]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658253218' status='passed' stop='1587658253219'>
+                    <name>I grab current url </name>
+                    <title>I grab current url </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658253219' status='passed' stop='1587658253794'>
+                    <name>I attach file "form input[type='file']", "image.jpeg"</name>
+                    <title>I attach file "form input[type='file']", "image.jpeg"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658253794' status='passed' stop='1587658253876'>
+                    <name>I send delete request "/core/cats/2934/remove"</name>
+                    <title>I send delete request "/core/cats/2934/remove"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1587658253904' status='passed' stop='1587658258066'>
+            <name>Add cat test</name>
+            <title>Add cat test</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587658255381' status='passed' stop='1587658255773'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658255774' status='passed' stop='1587658256665'>
+                    <name>I: catAddUI </name>
+                    <title>I: catAddUI </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1587658255774' status='passed' stop='1587658255892'>
+                            <name>I click {"xpath":"//a[@href='/cats/add']"}</name>
+                            <title>I click {"xpath":"//a[@href='/cats/add']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1587658255893' status='passed' stop='1587658256448'>
+                            <name>I fill field {"xpath":"//div[contains(@class, 'control is-expanded')]/input"}, "Гнщзодлдсэродыцзнпнщфухяюцющчеюраъ"</name>
+                            <title>I fill field {"xpath":"//div[contains(@class, 'control is-expanded')]/input"}, "Гнщзодлдсэродыцзнпнщфухяюцющчеюраъ"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1587658256448' status='passed' stop='1587658256557'>
+                            <name>I click {"xpath":"//input[@name='gender-0']"}</name>
+                            <title>I click {"xpath":"//input[@name='gender-0']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1587658256557' status='passed' stop='1587658256665'>
+                            <name>I click {"xpath":"//button[@class='button is-warning']"}</name>
+                            <title>I click {"xpath":"//button[@class='button is-warning']"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1587658256665' status='passed' stop='1587658257245'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "Гнщзодлдсэродыцзнпнщфухяюцющчеюраъ"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "Гнщзодлдсэродыцзнпнщфухяюцющчеюраъ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658257245' status='passed' stop='1587658257363'>
+                    <name>I click "//button[contains(@class, "main")]"</name>
+                    <title>I click "//button[contains(@class, "main")]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658257363' status='passed' stop='1587658257643'>
+                    <name>I click "//a[text()="Гнщзодлдсэродыцзнпнщфухяюцющчеюраъ"]"</name>
+                    <title>I click "//a[text()="Гнщзодлдсэродыцзнпнщфухяюцющчеюраъ"]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658257643' status='passed' stop='1587658258064'>
+                    <name>I wait for element "//div[contains(@class,"photos_photo")]"</name>
+                    <title>I wait for element "//div[contains(@class,"photos_photo")]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658258064' status='passed' stop='1587658258066'>
+                    <name>I grab current url </name>
+                    <title>I grab current url </title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587658258066' status='passed' stop='1587658258127'>
+                    <name>I send delete request "/core/cats/2935/remove"</name>
+                    <title>I send delete request "/core/cats/2935/remove"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

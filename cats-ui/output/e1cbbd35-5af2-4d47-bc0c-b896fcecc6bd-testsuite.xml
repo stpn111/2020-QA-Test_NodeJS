@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587670030164' stop='1587670044532'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587670030164' status='failed' stop='1587670037623'>
+            <name>Test dropdown empty | {"ъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъ"}</name>
+            <title>Test dropdown empty | {"ъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъ"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587670031994' status='passed' stop='1587670032274'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670032274' status='passed' stop='1587670032948'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "ъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъ"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "ъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъъ"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670032948' status='failed' stop='1587670037623'>
+                    <name>I see "//div[@class='dropdown-item' and text()='Нет совпадений']"</name>
+                    <title>I see "//div[@class='dropdown-item' and text()='Нет совпадений']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='2ea58887-5346-4541-ba08-8e0e9b815219-attachment.png' type='image/png' size='40966'/>
+            </attachments>
+            <failure>
+                <message></message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1587670037767' status='failed' stop='1587670043901'>
+            <name>Test dropdown empty | {"кот"}</name>
+            <title>Test dropdown empty | {"кот"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587670038519' status='passed' stop='1587670039070'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670039070' status='passed' stop='1587670039229'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "кот"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "кот"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670039229' status='failed' stop='1587670043901'>
+                    <name>I see "//div[@class='dropdown-item' and text()='Нет совпадений']"</name>
+                    <title>I see "//div[@class='dropdown-item' and text()='Нет совпадений']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='811891dc-f11d-4c6f-a214-f51217eadff6-attachment.png' type='image/png' size='45822'/>
+            </attachments>
+            <failure>
+                <message></message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

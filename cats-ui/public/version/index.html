@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Версии приложения</title>
+</head>
+<body>
+    <h3>UI:</h3>
+    <pre id='ui'></pre>
+    <h3>API:</h3>
+    <pre id='api'></pre>
+
+    <script type="text/javascript">
+        fetch('/version.json')
+            .then(r => r.json())
+            .then(ui => {
+                document.getElementById('ui').innerText = JSON.stringify(ui, null, 4);
+            })
+        fetch('https://cats.bobrovartem.ru/api/core/status')
+            .then(r => r.json())
+            .then(api => {
+                document.getElementById('api').innerText = JSON.stringify({version: api.version}, null, 4);
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587656467681' stop='1587656471391'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587656467682' status='failed' stop='1587656469606'>
+            <name>Add image to cat</name>
+            <title>Add image to cat</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587656469298' status='passed' stop='1587656469605'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='6381a4bd-945f-4831-b505-0e2a872d96ab-attachment.png' type='image/png' size='42880'/>
+            </attachments>
+            <failure>
+                <message>word is not defined</message>
+                <stack-trace>ReferenceError: word is not defined
+                    at Object.catRandomName (/home/mikhail/cats-ui/steps_file.js:28:40)
+                    at Object.catAddUI (/home/mikhail/cats-ui/steps_file.js:7:19)
+                    at Test.&lt;anonymous> (/home/mikhail/cats-ui/tinkoff_test.js:5:14)
+                    at Context.test.fn (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/scenario.js:78:14)
+                    at callFnAsync (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:415:21)
+                    at Test.Runnable.run (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:357:7)
+                    at Runner.runTest (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:535:10)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:653:12
+                    at next (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:447:14)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:457:7</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1587656469812' status='failed' stop='1587656471221'>
+            <name>Add cat test</name>
+            <title>Add cat test</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587656470919' status='passed' stop='1587656471221'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='3931d422-17a9-462a-9d4b-1833d6b316b1-attachment.png' type='image/png' size='42887'/>
+            </attachments>
+            <failure>
+                <message>word is not defined</message>
+                <stack-trace>ReferenceError: word is not defined
+                    at Object.catRandomName (/home/mikhail/cats-ui/steps_file.js:28:40)
+                    at Object.catAddUI (/home/mikhail/cats-ui/steps_file.js:7:19)
+                    at Test.&lt;anonymous> (/home/mikhail/cats-ui/tinkoff_test.js:20:14)
+                    at Context.test.fn (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/scenario.js:78:14)
+                    at callFnAsync (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:415:21)
+                    at Test.Runnable.run (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:357:7)
+                    at Runner.runTest (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:535:10)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:653:12
+                    at next (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:447:14)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:457:7</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587670721523' stop='1587670727520'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587670721524' status='failed' stop='1587670724610'>
+            <name>Test dropdown empty | {"Тинькоша"}</name>
+            <title>Test dropdown empty | {"Тинькоша"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587670723098' status='passed' stop='1587670723358'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670723358' status='passed' stop='1587670723606'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "Тинькоша"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "Тинькоша"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670723606' status='failed' stop='1587670724609'>
+                    <name>I wait for element "//div[@class='dropdown-content']/a[text()="Тинькоша1"]"</name>
+                    <title>I wait for element "//div[@class='dropdown-content']/a[text()="Тинькоша1"]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='18eb18c7-c986-4e6e-807c-73c1b1c172d6-attachment.png' type='image/png' size='42549'/>
+            </attachments>
+            <failure>
+                <message>element (//div[@class='dropdown-content']/a[text()="Тинькоша1"]) still not present on page after 1 sec
+                waiting for XPath "//div[@class='dropdown-content']/a[text()="Тинькоша1"]" failed: timeout 1000ms exceeded</message>
+                <stack-trace>Error: element (//div[@class='dropdown-content']/a[text()="Тинькоша1"]) still not present on page after 1 sec
+                waiting for XPath "//div[@class='dropdown-content']/a[text()="Тинькоша1"]" failed: timeout 1000ms exceeded
+                    at /home/mikhail/cats-ui/node_modules/codeceptjs/lib/helper/Puppeteer.js:1796:13</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1587670724757' status='failed' stop='1587670727358'>
+            <name>Test dropdown empty | {"Кот"}</name>
+            <title>Test dropdown empty | {"Кот"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587670725912' status='passed' stop='1587670726208'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670726208' status='passed' stop='1587670726356'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "Кот"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "Кот"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670726356' status='failed' stop='1587670727358'>
+                    <name>I wait for element "//div[@class='dropdown-content']/a[text()="Тинькоша1"]"</name>
+                    <title>I wait for element "//div[@class='dropdown-content']/a[text()="Тинькоша1"]"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='d89c890e-1a3c-4012-9480-0294a6493e3c-attachment.png' type='image/png' size='45852'/>
+            </attachments>
+            <failure>
+                <message>element (//div[@class='dropdown-content']/a[text()="Тинькоша1"]) still not present on page after 1 sec
+                waiting for XPath "//div[@class='dropdown-content']/a[text()="Тинькоша1"]" failed: timeout 1000ms exceeded</message>
+                <stack-trace>Error: element (//div[@class='dropdown-content']/a[text()="Тинькоша1"]) still not present on page after 1 sec
+                waiting for XPath "//div[@class='dropdown-content']/a[text()="Тинькоша1"]" failed: timeout 1000ms exceeded
+                    at /home/mikhail/cats-ui/node_modules/codeceptjs/lib/helper/Puppeteer.js:1796:13</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

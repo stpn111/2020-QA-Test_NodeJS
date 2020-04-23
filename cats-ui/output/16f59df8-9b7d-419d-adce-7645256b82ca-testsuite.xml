@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587656529220' stop='1587656531914'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587656529221' status='failed' stop='1587656530340'>
+            <name>Add image to cat</name>
+            <title>Add image to cat</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587656530020' status='passed' stop='1587656530339'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='b6070c08-af95-4984-a152-3ad844b762a4-attachment.png' type='image/png' size='42880'/>
+            </attachments>
+            <failure>
+                <message>result.substring(...).join is not a function</message>
+                <stack-trace>TypeError: result.substring(...).join is not a function
+                    at Object.catRandomName (/home/mikhail/cats-ui/steps_file.js:28:60)
+                    at Object.catAddUI (/home/mikhail/cats-ui/steps_file.js:7:19)
+                    at Test.&lt;anonymous> (/home/mikhail/cats-ui/tinkoff_test.js:5:14)
+                    at Context.test.fn (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/scenario.js:78:14)
+                    at callFnAsync (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:415:21)
+                    at Test.Runnable.run (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:357:7)
+                    at Runner.runTest (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:535:10)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:653:12
+                    at next (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:447:14)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:457:7</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1587656530526' status='failed' stop='1587656531747'>
+            <name>Add cat test</name>
+            <title>Add cat test</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587656531438' status='passed' stop='1587656531747'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='dccec4a7-2327-41da-8adf-8797b132b3b5-attachment.png' type='image/png' size='42887'/>
+            </attachments>
+            <failure>
+                <message>result.substring(...).join is not a function</message>
+                <stack-trace>TypeError: result.substring(...).join is not a function
+                    at Object.catRandomName (/home/mikhail/cats-ui/steps_file.js:28:60)
+                    at Object.catAddUI (/home/mikhail/cats-ui/steps_file.js:7:19)
+                    at Test.&lt;anonymous> (/home/mikhail/cats-ui/tinkoff_test.js:20:14)
+                    at Context.test.fn (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/scenario.js:78:14)
+                    at callFnAsync (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:415:21)
+                    at Test.Runnable.run (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:357:7)
+                    at Runner.runTest (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:535:10)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:653:12
+                    at next (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:447:14)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:457:7</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

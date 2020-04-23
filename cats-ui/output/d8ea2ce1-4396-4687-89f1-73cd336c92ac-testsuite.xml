@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587656365055' stop='1587656367374'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587656365056' status='failed' stop='1587656365857'>
+            <name>Add image to cat</name>
+            <title>Add image to cat</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587656365537' status='passed' stop='1587656365857'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='2f847031-9267-403d-a676-2f71f0005c8d-attachment.png' type='image/png' size='42889'/>
+            </attachments>
+            <failure>
+                <message>length is not defined</message>
+                <stack-trace>ReferenceError: length is not defined
+                    at Object.catRandomName (/home/mikhail/cats-ui/steps_file.js:25:27)
+                    at Object.catAddUI (/home/mikhail/cats-ui/steps_file.js:7:19)
+                    at Test.&lt;anonymous> (/home/mikhail/cats-ui/tinkoff_test.js:5:14)
+                    at Context.test.fn (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/scenario.js:78:14)
+                    at callFnAsync (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:415:21)
+                    at Test.Runnable.run (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:357:7)
+                    at Runner.runTest (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:535:10)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:653:12
+                    at next (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:447:14)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:457:7</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1587656366061' status='failed' stop='1587656367219'>
+            <name>Add cat test</name>
+            <title>Add cat test</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587656366936' status='passed' stop='1587656367219'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='a63d3824-23d5-4bb1-a92c-86ea267399b3-attachment.png' type='image/png' size='42887'/>
+            </attachments>
+            <failure>
+                <message>length is not defined</message>
+                <stack-trace>ReferenceError: length is not defined
+                    at Object.catRandomName (/home/mikhail/cats-ui/steps_file.js:25:27)
+                    at Object.catAddUI (/home/mikhail/cats-ui/steps_file.js:7:19)
+                    at Test.&lt;anonymous> (/home/mikhail/cats-ui/tinkoff_test.js:20:14)
+                    at Context.test.fn (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/scenario.js:78:14)
+                    at callFnAsync (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:415:21)
+                    at Test.Runnable.run (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:357:7)
+                    at Runner.runTest (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:535:10)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:653:12
+                    at next (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:447:14)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:457:7</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

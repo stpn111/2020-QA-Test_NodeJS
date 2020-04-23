@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587656743480' stop='1587656746434'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587656743481' status='failed' stop='1587656745225'>
+            <name>Add image to cat</name>
+            <title>Add image to cat</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587656744921' status='passed' stop='1587656745224'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='1efe04a1-ede4-460e-b8a0-396094a08102-attachment.png' type='image/png' size='42625'/>
+            </attachments>
+            <failure>
+                <message>str is not defined</message>
+                <stack-trace>ReferenceError: str is not defined
+                    at Object.catRandomName (/home/mikhail/cats-ui/steps_file.js:28:39)
+                    at Object.catAddUI (/home/mikhail/cats-ui/steps_file.js:7:19)
+                    at Test.&lt;anonymous> (/home/mikhail/cats-ui/tinkoff_test.js:5:14)
+                    at Context.test.fn (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/scenario.js:78:14)
+                    at callFnAsync (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:415:21)
+                    at Test.Runnable.run (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:357:7)
+                    at Runner.runTest (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:535:10)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:653:12
+                    at next (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:447:14)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:457:7</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1587656745388' status='failed' stop='1587656746270'>
+            <name>Add cat test</name>
+            <title>Add cat test</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587656745946' status='passed' stop='1587656746270'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='6b538692-152f-41e8-a442-88498c3fc969-attachment.png' type='image/png' size='42880'/>
+            </attachments>
+            <failure>
+                <message>str is not defined</message>
+                <stack-trace>ReferenceError: str is not defined
+                    at Object.catRandomName (/home/mikhail/cats-ui/steps_file.js:28:39)
+                    at Object.catAddUI (/home/mikhail/cats-ui/steps_file.js:7:19)
+                    at Test.&lt;anonymous> (/home/mikhail/cats-ui/tinkoff_test.js:20:14)
+                    at Context.test.fn (/home/mikhail/cats-ui/node_modules/codeceptjs/lib/scenario.js:78:14)
+                    at callFnAsync (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:415:21)
+                    at Test.Runnable.run (/home/mikhail/cats-ui/node_modules/mocha/lib/runnable.js:357:7)
+                    at Runner.runTest (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:535:10)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:653:12
+                    at next (/home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:447:14)
+                    at /home/mikhail/cats-ui/node_modules/mocha/lib/runner.js:457:7</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587670327983' stop='1587670342902'>
+    <name>Suite:</name>
+    <title>Suite:</title>
+    <test-cases>
+        <test-case start='1587670327984' status='failed' stop='1587670335768'>
+            <name>Test dropdown empty | {"Тинькошаы"}</name>
+            <title>Test dropdown empty | {"Тинькошаы"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587670330122' status='passed' stop='1587670330862'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670330862' status='passed' stop='1587670331098'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "Тинькошаы"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "Тинькошаы"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670331098' status='failed' stop='1587670335767'>
+                    <name>I see "//div[@class='dropdown-item' and text()='Нет совпадений']"</name>
+                    <title>I see "//div[@class='dropdown-item' and text()='Нет совпадений']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='948160f1-29e7-4a50-b6fe-a48212e863f2-attachment.png' type='image/png' size='41310'/>
+            </attachments>
+            <failure>
+                <message></message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1587670335900' status='failed' stop='1587670342766'>
+            <name>Test dropdown empty | {"Коты"}</name>
+            <title>Test dropdown empty | {"Коты"}</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1587670337197' status='passed' stop='1587670337931'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670337931' status='passed' stop='1587670338099'>
+                    <name>I fill field "//div[@class="dropdown"]//input", "Коты"</name>
+                    <title>I fill field "//div[@class="dropdown"]//input", "Коты"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1587670338099' status='failed' stop='1587670342766'>
+                    <name>I see "//div[@class='dropdown-item' and text()='Нет совпадений']"</name>
+                    <title>I see "//div[@class='dropdown-item' and text()='Нет совпадений']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='3e65eeff-c001-4bd3-8c9e-f0e4eb5da56c-attachment.png' type='image/png' size='40758'/>
+            </attachments>
+            <failure>
+                <message></message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
