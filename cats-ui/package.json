@@ -20,7 +20,7 @@
     "alertifyjs": "1.13.1",
     "allure": "0.0.0",
     "allure-commandline": "^2.13.0",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "classnames": "2.2.6",
     "codeceptjs": "^2.6.1",
     "puppeteer": "^2.0.0",
